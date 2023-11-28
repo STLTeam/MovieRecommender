@@ -101,7 +101,7 @@ export default function NavBarSearch({
 
     try {
       setProgress(25);
-      const response = await axios.post("http://localhost:5000/recommend", {
+      const response = await axios.post("https://flask-backend-dozr.onrender.com/recommend", {
         selected_movie: selectedMovie,
       });
 
