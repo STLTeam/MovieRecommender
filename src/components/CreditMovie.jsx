@@ -83,7 +83,7 @@ export default function CreditMovie({
     const getMovieDetails = async () => {
       try {
         const response = await axios.get(
-          `https://flask-backend-dozr.onrender.com/get_movie_details/${movieIndex}`
+          `https://flask-backend-in65.onrender.com/get_movie_details/${movieIndex}`
         );
         setGenres(response.data.genres);
         setOverview(response.data.overview);

@@ -44,7 +44,7 @@ export default function CreditDialog({
     const fetchCredits = async () => {
       try {
         const response = await axios.get(
-          `https://flask-backend-dozr.onrender.com/get_credits/${movieIndex}`
+          `https://flask-backend-in65.onrender.com/get_credits/${movieIndex}`
         );
         const cast = response.data.cast;
         const crew = response.data.crew;
