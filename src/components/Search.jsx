@@ -106,7 +106,7 @@ export default function Search({
 
     try {
       setProgress(25);
-      const response = await axios.post("http:localhost:5000/recommend", {
+      const response = await axios.post("http://localhost:5000/recommend", {
         selected_movie: selectedMovie,
       });
 
