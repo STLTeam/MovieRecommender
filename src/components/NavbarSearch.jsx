@@ -65,7 +65,7 @@ export default function NavBarSearch({
     })();
     const fetchMovieNames = async () => {
       try {
-        const response = await axios.get("https://flask-backend-in65.onrender.com/movie_names");
+        const response = await axios.get("http://localhost:5000/movie_names");
         const namesArray = Object.values(response.data);
         setMovieNames(namesArray);
       } catch (error) {
@@ -101,7 +101,7 @@ export default function NavBarSearch({
 
     try {
       setProgress(25);
-      const response = await axios.post("https://flask-backend-in65.onrender.com/recommend", {
+      const response = await axios.post("http://localhost:5000/recommend", {
         selected_movie: selectedMovie,
       });
 
